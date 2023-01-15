@@ -4,7 +4,6 @@
 	justify-content: center;
 	background-color: rgb(228, 212, 158);
 	max-width: 60rem;
-	z-index: 99999;
 	margin: auto;
 	border: 4px solid rgb(81, 39, 0);
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 7.5px 15px 0px;
@@ -30,4 +29,73 @@
 
 .menu__list__item {
 	font-size: 3rem;
+}
+
+@media only screen and (max-width: 1000px) {
+	.menu {
+		width: 45rem;		
+	}
+
+	.menu__title {
+		font-size: 4rem;
+	}
+
+	.menu__list {
+		height: 25rem;
+	}
+
+	.menu__list__item {
+		font-size: 2.2rem;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.menu {
+		width: 100%;	
+		border-left: none;
+		border-right: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.menu__title {
+		font-size: 3rem;
+	}
+
+	.menu__list {
+		height: 20rem;
+		margin-top: 2rem;
+	}
+
+	.menu__list__item {
+		font-size: 1.8rem;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.menu__title {
+		font-size: 2rem;
+	}
+
+	.menu__list {
+		height: 15rem;
+	}
+
+	.menu__list__item {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.menu__title {
+		font-size: 1.5rem;
+	}
+
+	.menu__list {
+		height: 13rem;
+	}
+
+	.menu__list__item {
+		font-size: 1.2rem;
+	}
 }
