@@ -1,0 +1,50 @@
+@font-face {
+	/* https://www.dafont.com/spongeboy-me-bob.font */
+	font-family: 'Spongeboy Me Bob';
+	src: url('./assets/fonts/spongeboy-me-bob.woff') format('woff');
+}
+
+body {
+	font-family: 'Spongeboy Me Bob';
+}
+
+.navbar {
+	display: flex;
+	justify-content: right;
+	height: 12rem;
+}
+
+.navbar__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 12rem;
+	min-width: 30rem;
+}
+
+.navbar__nav__item {
+	font-size: 1.6rem;
+	color: rgb(220, 0, 0);
+	padding: 0.8rem;
+	border-radius: 1.5rem;
+}
+
+.navbar__nav__item:hover {
+	cursor: pointer;
+	color: rgb(251, 227, 128);
+}
+
+.navbar__nav__item--active {
+	background-color: rgb(220, 0, 0);
+	color: white;
+}
+
+.background-image {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	object-fit: cover;
+	opacity: 0.5;
+}

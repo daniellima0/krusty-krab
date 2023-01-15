@@ -1,3 +1,36 @@
-.paragraph {
-	color: red;
+.home {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	margin: auto;
+}
+
+.home__title {
+	margin-top: 10rem;
+	font-size: 5rem;
+	background-color: rgb(251, 227, 128);
+	color: rgb(220, 0, 0);
+	padding: 1.4rem;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 7.5px 15px 0px;
+}
+
+.home__button {
+	font-family: 'Spongeboy Me Bob';
+	margin: auto;
+	margin-top: 4rem;
+	width: 13rem;
+	height: 3.6rem;
+	font-size: 1.6rem;
+	border-radius: 2rem;
+	background-color: rgb(220, 0, 0);
+	color: white;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 7.5px 15px 0px;
+}
+
+.home__button:hover {
+	cursor: pointer;
+	width: 13.8rem;
+	height: 3.8rem;
+	font-size: 1.7rem;
+	color: rgb(251, 227, 128);
 }
