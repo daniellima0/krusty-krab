@@ -13,15 +13,10 @@ const homeBackgroundImage = document.createElement('img');
 homeBackgroundImage.src = homeBackgroundImagePath;
 homeBackgroundImage.className = 'background-image';
 
-// contentDiv.append(homeBackgroundImage);
+contentDiv.append(homeBackgroundImage);
 
 const navbar = document.createElement('header');
 navbar.className = 'navbar';
-
-// const logo = document.createElement('img');
-// logo.src = logoPath;
-// logo.className = 'navbar__logo';
-// navbar.append(logo);
 
 const nav = document.createElement('nav');
 nav.className = 'navbar__nav';
@@ -58,8 +53,6 @@ menuLink.addEventListener('click', () => {
 const contactBackgroundImage = document.createElement('img');
 contactBackgroundImage.src = contactBackgroundImagePath;
 contactBackgroundImage.className = 'background-image';
-//temporary
-contentDiv.append(contactBackgroundImage);
 
 const contactLink = document.createElement('a');
 contactLink.className = 'navbar__nav__item';
@@ -78,8 +71,5 @@ nav.append(homeLink, menuLink, contactLink);
 navbar.append(nav);
 
 contentDiv.append(navbar);
-//temporary
-contactLink.className = 'navbar__nav__item navbar__nav__item--active';
-addContact();
-// homeLink.className = 'navbar__nav__item navbar__nav__item--active';
-// addHome();
+homeLink.className = 'navbar__nav__item navbar__nav__item--active';
+addHome();
