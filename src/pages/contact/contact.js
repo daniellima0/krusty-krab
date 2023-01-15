@@ -6,6 +6,19 @@ function addContact() {
 	const container = document.createElement('div');
 	container.className = 'contact';
 
+	const titleContainer = document.createElement('div');
+	titleContainer.className = 'contact__title-container';
+
+	const titleImage = document.createElement('img');
+	titleImage.src = patrickImagePath;
+	titleImage.className = 'contact__title-container__image';
+
+	const title = document.createElement('h1');
+	title.innerHTML = 'The most efficient service of the Seven Seas!';
+	title.className = 'contact__title-container__title';
+
+	titleContainer.append(title, titleImage);
+
 	const contactInfo = document.createElement('ul');
 	contactInfo.className = 'contact__info';
 
@@ -23,28 +36,7 @@ function addContact() {
 
 	contactInfo.append(address, hours, phone);
 
-	const illustrationContainer = document.createElement('div');
-	illustrationContainer.className = 'contact__illustration';
-
-	const patrickImage = document.createElement('img');
-	patrickImage.src = patrickImagePath;
-	patrickImage.className = 'contact__illustration__patrick';
-
-	const patrickText = document.createElement('p');
-	patrickText.innerHTML = 'The most efficient service of the Seven Seas!';
-	patrickText.className = 'contact__illustration__text';
-
-	const squidwardImage = document.createElement('img');
-	squidwardImage.src = squidwardImagePath;
-	squidwardImage.className = 'contact__illustration__squidward';
-
-	const squidwardText = document.createElement('p');
-	squidwardText.innerHTML = 'Our workers will be happy to take your order!';
-	squidwardText.className = 'contact__illustration__text';
-
-	illustrationContainer.append(patrickText, patrickImage);
-
-	container.append(illustrationContainer, contactInfo);
+	container.append(titleContainer, contactInfo);
 
 	const contentDiv = document.getElementById('content');
 	contentDiv.append(container);

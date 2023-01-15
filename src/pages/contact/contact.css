@@ -9,6 +9,25 @@
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 7.5px 15px 0px;
 }
 
+.contact__title-container {
+	display: flex;
+	margin-top: 2rem;
+	align-items: center;
+}
+
+.contact__title-container__title {
+	margin: auto;
+	font-size: 3rem;
+	text-align: center;
+	color: rgb(220, 0, 0);
+	line-height: 5rem;
+}
+
+.contact__title-container__image {
+	width: 15rem;
+	margin-right: 3rem;
+}
+
 .contact__info {
 	margin: auto;
 	margin-top: 3rem;
@@ -20,29 +39,5 @@
 .contact__info__item {
 	font-size: 2.2rem;
 	margin-bottom: 2rem;
-	line-height: 5rem;
-}
-
-.contact__illustration {
-	display: flex;
-	margin-top: 2rem;
-	align-items: center;
-}
-
-.contact__illustration__patrick {
-	width: 15rem;
-	margin-right: 3rem;
-}
-
-/* .contact__illustration__squidward {
-	width: 15rem;
-	margin: auto;
-} */
-
-.contact__illustration__text {
-	margin: auto;
-	font-size: 3rem;
-	text-align: center;
-	color: rgb(220, 0, 0);
 	line-height: 5rem;
 }
